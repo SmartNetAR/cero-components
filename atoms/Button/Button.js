@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import './Button.css'
 
 export const handleClick = ({ onClick }) => (event) => {
     onClick(event)
