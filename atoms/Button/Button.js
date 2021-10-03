@@ -2,12 +2,17 @@ import PropTypes from 'prop-types' ;
 import React from 'react' ;
 import './Button.css' ;
 
-export const handleClick = ( { onClick } ) => ( event ) => {
+export const handleClick = ( { onClick } ) => ( event ) =>
+{
     onClick( event ) ;
 } ;
 
 const Button = ( { children, onClick } ) => (
-    <button onClick={ handleClick( { onClick } ) }>{ children }</button>
+    <button
+        onClick={ handleClick( { onClick } ) }
+    >
+        { children }
+    </button>
 ) ;
 
 Button.propTypes = {
@@ -16,7 +21,7 @@ Button.propTypes = {
 } ;
 
 Button.defaultProps = {
-    onClick: () => { },
+    onClick: () => {},
 } ;
 
 export default Button ;

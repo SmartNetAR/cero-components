@@ -3,9 +3,12 @@ import { render, fireEvent, screen } from '@testing-library/react' ;
 
 import Button, { handleClick } from './Button' ;
 
-describe( '[ atoms / Button ]', () => {
-    describe( '#Button', () => {
-        it( 'when `Button` is clicked', () => {
+describe( '[ atoms / Button ]', () =>
+{
+    describe( '#Button', () =>
+    {
+        it( 'when `Button` is clicked', () =>
+        {
             // Arrange
             const onClickMock = jest.fn() ;
             const props = {
