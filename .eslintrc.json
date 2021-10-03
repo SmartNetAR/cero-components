@@ -1,0 +1,105 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "indent": [
+      1,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "always"],
+    "semi-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "comma-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "space-infix-ops": 2,
+    "space-in-parens": [
+      1,
+      "always",
+      {
+        "exceptions": ["empty"]
+      }
+    ],
+    "array-bracket-spacing": ["warn", "always"],
+    "object-curly-spacing": ["warn", "always"],
+    "block-spacing": "warn",
+    "arrow-spacing": "warn",
+    "space-before-function-paren": "warn",
+    "keyword-spacing": [
+      "warn",
+      {
+        "before": true
+      }
+    ],
+    "linebreak-style": ["error", "unix"],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["_id"]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/prop-types": "warn",
+    "react/jsx-curly-spacing": [
+      "warn",
+      {
+        "when": "always",
+        "children": {
+          "when": "always"
+        }
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      "warn",
+      {
+        "html": "ignore",
+        "custom": "ignore",
+        "exceptions": [""]
+      }
+    ],
+    "eol-last": ["error", "always"]
+  }
+}
